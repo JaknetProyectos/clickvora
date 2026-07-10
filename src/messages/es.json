@@ -1,0 +1,568 @@
+{
+  "cartPage": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "summary": "1. Revisión",
+      "shippingPayment": "2. Entrega y Pago"
+    },
+    "success": {
+      "title": "¡Transacción Completada Exitosamente!",
+      "description": "Tu pago ha sido autorizado. El entorno cloud de tu plan de hosting ya está en fase de configuración para su activación.",
+      "paymentReference": "Referencia de Pago:",
+      "paidAmount": "Monto Liquidado:",
+      "transactionStatus": "Estado del Pago:",
+      "approved": "AUTORIZADA",
+      "backToCatalog": "Regresar al Catálogo"
+    },
+    "empty": {
+      "title": "Tu cesta de compras está vacía",
+      "description": "No se detectaron servicios de hosting guardados en tu sesión de navegación actual.",
+      "goToStore": "Ver el Catálogo"
+    },
+    "order": {
+      "title": "Productos en tu orden",
+      "clear": "Eliminar Planes"
+    },
+    "financial": {
+      "title": "Resumen de Cuenta",
+      "couponPlaceholder": "Código promocional",
+      "applyCoupon": "Aplicar",
+      "appliedCoupon": "Cupón {code} (-{discount}%)",
+      "remove": "Quitar",
+      "couponInvalid": "El código de descuento no es válido o ya expiró.",
+      "subtotal": "Subtotal de Productos:",
+      "discount": "Descuento Obtenido:",
+      "netTotal": "Monto Neto a Liquidar:",
+      "tax": "IVA {tax}"
+    },
+    "actions": {
+      "proceedToPayment": "Avanzar al Pago",
+      "processing": "Validando Transacción por medio de Octano...",
+      "payAmount": "Pagar {amount}",
+      "backToCart": "Modificar pedido / Modificar cupón"
+    },
+    "errors": {
+      "declined": "El cargo fue denegado por el banco emisor.",
+      "connection": "Se experimentó un problema de enlace con el procesador de pagos."
+    },
+    "metadata": {
+      "couponApplied": "Cupón de descuento activo",
+      "standardSale": "Adquisición digital convencional"
+    },
+    "form": {
+      "buyerTitle": "Datos de Facturación / Comprador",
+      "addressTitle": "Información de Contacto y Activación",
+      "paymentTitle": "Pasarela de Cobro Encriptada",
+      "firstName": "Nombre(s) *",
+      "lastName": "Apellidos *",
+      "email": "Correo electrónico *",
+      "phone": "Teléfono Móvil (10 posiciones) *",
+      "company": "Empresa (Opcional)",
+      "streetAddress": "Vía pública, Número Exterior y Número Interior *",
+      "streetAddressPlaceholder": "Av. Universidad 450, Int 4",
+      "neighborhood": "Colonia / Entre Calles (Opcional)",
+      "neighborhoodPlaceholder": "Col. Vértiz Narvarte",
+      "city": "Alcaldía o Localidad *",
+      "state": "Provincia / Estado *",
+      "statePlaceholder": "CDMX",
+      "postalCode": "Código Postal *",
+      "country": "Territorio",
+      "mexico": "México (MX)",
+      "cardNumber": "Número de Tarjeta (Visa / Mastercard) *",
+      "cardNumberPlaceholder": "4152 0000 0000 0000",
+      "cardHolderName": "Titular de la Tarjeta *",
+      "cardHolderPlaceholder": "Tal como aparece en la tarjeta",
+      "expiryMonth": "Mes Exp. (MM) *",
+      "expiryMonthPlaceholder": "05",
+      "expiryYear": "Año Exp. (AAAA) *",
+      "expiryYearPlaceholder": "2029",
+      "cvv": "Código de Verificación (CVV) *",
+      "cvvPlaceholder": "•••"
+    },
+    "security": {
+      "note": "Proceso gestionado bajo estándares de seguridad"
+    },
+    "images": {
+      "etominAlt": "Octano",
+      "securePaymentAlt": "Pago seguro"
+    }
+  },
+  "customPlan": {
+    "hero": {
+      "badge": "Panel de Usuarios",
+      "title": "Añadir presupuesto personalizado"
+    },
+    "imageAlt": "Logo de Elevark",
+    "authorized": {
+      "title": "Cobro verificado",
+      "description": "Introduce la clave de cotización y el monto previamente validado con nuestra área comercial para avanzar con la facturación."
+    },
+    "form": {
+      "badge": "Checkout a la medida",
+      "title": "Detalles del presupuesto",
+      "quoteLabel": "Clave de cotización",
+      "quotePlaceholder": "Ej. ELV-2026-001",
+      "amountLabel": "Cifra acordada",
+      "amountPlaceholder": "0.00",
+      "taxNote": "+ El impuesto correspondiente en el siguiente paso."
+    },
+    "buttons": {
+      "adding": "Sumando a la cesta...",
+      "addToCart": "Añadir a la cesta"
+    },
+    "errors": {
+      "quoteRequired": "Es necesario proporcionar un identificador de cotización válido.",
+      "invalidAmount": "Es necesario indicar una cifra financiera válida."
+    }
+  },
+  "header": {
+    "logoAlt": "Clickvora",
+    "titleAlt": "Clickvora",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "tax": "+ IVA",
+    "cart": "Carrito",
+    "nav": {
+      "home": "Inicio",
+      "about": "Sobre nosotros",
+      "services": "Servicios",
+      "plans": "Planes",
+      "contact": "Contacto"
+    }
+  },
+  "hero": {
+    "tagline": "La tecnología no solo construye el futuro: lo acelera",
+    "title": {
+      "prefix": "Especialistas en el",
+      "highlight": "desarrollo de aplicaciones",
+      "suffix": "móviles y videojuegos"
+    },
+    "features": {
+      "technology": "Tecnología",
+      "design": "Diseño",
+      "gameplay": "Jugabilidad"
+    },
+    "cta": "Inicia ahora",
+    "images": {
+      "mobileApp": "Desarrollo de aplicaciones móviles",
+      "gaming": "Desarrollo de videojuegos",
+      "appInterface": "Interfaz de aplicación"
+    }
+  },
+  "why": {
+    "badge": "¿Por qué Clickvora?",
+    "title": {
+      "prefix": "Desde la concepción de la idea",
+      "highlight": "hasta su lanzamiento"
+    },
+    "benefits": {
+      "vision": {
+        "title": "Visión Futurista y Creatividad",
+        "description": "Elegir Clickvora es apostar por una fusión única de tecnología, creatividad y visión de futuro que impulsa a las marcas a trascender lo convencional."
+      },
+      "integration": {
+        "title": "Integración Multidisciplinaria",
+        "description": "Nuestra fortaleza está en unir desarrollo, arte, diseño y estrategia para crear experiencias funcionales y emocionalmente impactantes."
+      },
+      "commitment": {
+        "title": "Compromiso y Transparencia",
+        "description": "Trabajamos con pasión y comunicación constante, acompañando al cliente desde la idea inicial hasta el lanzamiento final."
+      },
+      "agile": {
+        "title": "Tecnología Ágil y Precisión",
+        "description": "Aplicamos tecnologías emergentes y metodologías ágiles para entregar resultados modernos, sostenibles y ejecutados con precisión."
+      }
+    }
+  },
+  "tools": {
+    "badge": "Dominamos las herramientas",
+    "title": {
+      "prefix": "El equipo de",
+      "highlight": "Clickvora",
+      "suffix": "domina las herramientas más avanzadas en motores como Unity y Unreal Engine"
+    },
+    "description": "lo que nos permite construir mundos detallados, sistemas de progresión equilibrados y experiencias visuales impactantes. Cada textura, cada animación y cada sonido está diseñado para transmitir emoción, desafío y diversión.",
+    "card": {
+      "title": "Trabajamos desde juegos casuales y educativos hasta experiencias inmersivas",
+      "description": "con historias profundas y mecánicas avanzadas. Nos adaptamos al objetivo de cada cliente, ya sea entretener, enseñar o fidelizar."
+    },
+    "logoAlt": "Clickvora Logo"
+  },
+  "missions": {
+    "badge": "Misiones Tecnológicas",
+    "title": {
+      "prefix": "Cada servicio en",
+      "highlight": "Clickvora",
+      "suffix": "es una misión de desarrollo"
+    },
+    "subtitle": "diseñada para potenciar tu presencia digital y elevar tu proyecto a nuevas dimensiones.",
+    "cta": "Ver Planes",
+    "missionsList": {
+      "mission1": {
+        "badge": "MISIÓN 1",
+        "title": "Universo Interactivo (Desarrollo de Videojuegos)",
+        "description": "Creamos videojuegos móviles 2D y 3D que combinan arte, narrativa y tecnología en perfecta armonía. Nuestro proceso inicia con la conceptualización de la idea y la definición del gameplay, para garantizar que cada jugador experimente una inmersión total desde el primer toque en pantalla.",
+        "features": {
+          "feature1": {
+            "title": "Desarrollo de Experiencias Interactivas",
+            "description": "El equipo de Clickvora domina herramientas avanzadas como Unity y Unreal Engine, lo que nos permite construir mundos detallados, sistemas de progresión equilibrados y experiencias visuales impactantes."
+          },
+          "feature2": {
+            "title": "Engagement y Personalidad de Juego",
+            "description": "Integramos sistemas de recompensas, misiones diarias, rankings y componentes sociales para mantener el interés y la competitividad de los usuarios."
+          }
+        }
+      },
+      "mission2": {
+        "badge": "MISIÓN 2",
+        "title": "PowerPlay Corporativo (Gamificación para Empresas)",
+        "description": "La gamificación es el puente entre la productividad y la motivación. En Clickvora, transformamos los procesos empresariales en experiencias interactivas que inspiran participación, aprendizaje y compromiso.",
+        "features": {
+          "feature1": {
+            "title": "Gamificación que Transforma el Día a Día",
+            "description": "Diseñamos entornos digitales donde empleados, clientes o estudiantes se convierten en jugadores activos de su propio progreso."
+          },
+          "feature2": {
+            "title": "Experiencias a la Medida para Empresas",
+            "description": "Trabajamos junto a cada organización para entender sus metas, cultura y retos internos."
+          }
+        }
+      },
+      "mission3": {
+        "badge": "MISIÓN 3",
+        "title": "Engine Dynamics (Diseño de Mecánicas de Juego)",
+        "description": "Detrás de cada gran juego hay un sistema invisible que da sentido a la experiencia: sus mecánicas. En Clickvora diseñamos la estructura que mantiene la diversión equilibrada, fluida y desafiante.",
+        "features": {
+          "feature1": {
+            "title": "Balance y Diseño de Mecánicas",
+            "description": "Analizamos la progresión, la curva de dificultad, la frecuencia de recompensas y los sistemas de monetización para mantener el atractivo del juego."
+          },
+          "feature2": {
+            "title": "Comunidad y Retención",
+            "description": "Desarrollamos experiencias multijugador, sistemas de ranking, eventos dinámicos y estrategias de retención que mantienen a la comunidad activa."
+          }
+        }
+      },
+      "mission4": {
+        "badge": "MISIÓN 4",
+        "title": "PixelCraft Studio (Arte y Diseño para Videojuegos)",
+        "description": "El arte da vida a cada historia, y en Clickvora, nuestro estudio creativo PixelCraft combina talento artístico con precisión técnica para crear universos visuales memorables.",
+        "features": {
+          "feature1": {
+            "title": "Arte 2D/3D con Identidad Propia",
+            "description": "Creamos ilustraciones, personajes, entornos y animaciones en 2D y 3D con un estilo único."
+          },
+          "feature2": {
+            "title": "Diseño UI/UX y Coherencia Visual",
+            "description": "Diseñamos interfaces intuitivas, fluidas y visualmente impactantes."
+          }
+        }
+      },
+      "mission5": {
+        "badge": "MISIÓN 5",
+        "title": "AppVerse (Desarrollo de Aplicaciones Móviles)",
+        "description": "En un mundo móvil, tu aplicación es tu carta de presentación. En Clickvora, diseñamos y desarrollamos apps híbridas personalizadas que combinan estética, rendimiento y funcionalidad.",
+        "features": {
+          "feature1": {
+            "title": "Diseño y Tecnología para Apps Escalables",
+            "description": "Partimos del diseño centrado en el usuario, estudiando experiencia, navegabilidad y flujo para crear interfaces intuitivas."
+          },
+          "feature2": {
+            "title": "Metodología Ágil y Calidad Técnica",
+            "description": "Aplicamos metodologías ágiles con entregas progresivas y retroalimentación constante."
+          }
+        }
+      },
+      "mission6": {
+        "badge": "MISIÓN 6",
+        "title": "DataLink (Integraciones y Conectividad)",
+        "description": "Las aplicaciones modernas viven conectadas a un ecosistema digital más amplio. En Clickvora, creamos esa conexión. Nuestro servicio de integraciones y conectividad permite que tus sistemas se comuniquen de forma segura, eficiente y en tiempo real.",
+        "features": {
+          "feature1": {
+            "title": "Integraciones Inteligentes para tu Negocio",
+            "description": "Integramos pasarelas de pago, CRMs, ERPs, notificaciones, webhooks y APIs externas para automatizar procesos."
+          },
+          "feature2": {
+            "title": "Estabilidad, Seguridad y Escalabilidad",
+            "description": "Realizamos pruebas exhaustivas para garantizar que cada conexión sea estable, segura y escalable."
+          }
+        }
+      }
+    }
+  },
+  "customPlanSection": {
+    "badge": "Plan Personalizado",
+    "title": {
+      "prefix": "Plan",
+      "highlight": "personalizado"
+    },
+    "subtitle": "¿Por qué elegir un plan personalizado Clickvora?",
+    "features": {
+      "flexibility": "Flexibilidad total en el alcance del proyecto.",
+      "scalability": "Escalabilidad técnica y creativa.",
+      "deliveries": "Entregas programadas y soporte continuo.",
+      "integration": "Integración completa entre software, arte y experiencia de usuario."
+    },
+    "description": "Contáctanos para diseñar una propuesta adaptada a tus necesidades. Nuestro equipo te asesorará para estructurar el plan perfecto según tu visión, objetivos y presupuesto.",
+    "cta": {
+      "pay": "Pagar Ahora",
+      "request": "Solicitar Un Plan"
+    },
+    "tech": {
+      "kotlin": "Kotlin",
+      "flutter": "Flutter",
+      "react": "React"
+    }
+  },
+  "contact": {
+    "badge": "Contacto",
+    "title": {
+      "prefix": "¿Listo para",
+      "highlight": "empezar",
+      "suffix": "?"
+    },
+    "form": {
+      "description": "Completa el formulario y cuéntanos sobre tu proyecto, ya sea una aplicación, un videojuego o una experiencia gamificada.",
+      "name": "Nombre *",
+      "email": "Email *",
+      "phone": "Teléfono",
+      "subject": "Asunto",
+      "message": "Cuéntanos de tu proyecto *",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "subjects": {
+        "gameDev": "Desarrollo de Videojuegos",
+        "mobileApps": "Aplicaciones Móviles",
+        "gamification": "Gamificación",
+        "art": "Arte y Diseño",
+        "integrations": "Integraciones",
+        "other": "Otro"
+      }
+    },
+    "errors": {
+      "requiredFields": "Por favor, completa los campos requeridos (Nombre, Email y Mensaje).",
+      "default": "Ocurrió un problema al enviar tu mensaje. Inténtalo de nuevo."
+    },
+    "success": {
+      "message": "¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto."
+    },
+    "info": {
+      "title": "Otras formas de contacto",
+      "email": "Email",
+      "phone": "Teléfono",
+      "address": "Dirección",
+      "schedule": "Horario",
+      "scheduleHours": "Lun - Vie: 9:00 - 18:00",
+      "addressLines": {
+        "line1": "AVENIDA HOMERO, N°404 PISO 5,",
+        "line2": "COLONIA POLANCO V SECCIÓN,",
+        "line3": "ALCALDÍA MIGUEL HIDALGO, CP. 11560,",
+        "line4": "ENTIDAD FEDERATIVA CIUDAD DE MÉXICO."
+      }
+    }
+  },
+  "footer": {
+    "missionsTitle": "Misiones",
+    "plansTitle": "Planes",
+    "missions": {
+      "interactiveUniverse": "Universo Interactivo",
+      "pixelCraft": "PixelCraft Studio",
+      "powerPlay": "PowerPlay Corporativo",
+      "appVerse": "AppVerse",
+      "engineDynamics": "Engine Dynamics",
+      "dataLink": "DataLink"
+    },
+    "plans": {
+      "mobile2d3d": "Juegos Móviles 2D Y 3D",
+      "mobileApps": "Desarrollo De Aplicaciones Móviles",
+      "gamification": "Gamificación Para Empresas",
+      "optimization": "Optimización Y Actualización De Apps",
+      "mechanics": "Diseño De Mecánicas De Juego",
+      "integrations": "Integraciones Y Conectividad",
+      "artDesign": "Arte Y Diseño Para VideoJuegos"
+    },
+    "cta": "Ver Planes",
+    "copyright": "Clickvora 2026 Todos los derechos reservados.",
+    "legal": {
+      "privacy": "Aviso de privacidad",
+      "terms": "Términos y condiciones",
+      "refunds": "Política de devoluciones"
+    },
+    "logoAlt": "Clickvora Logo",
+    "titleAlt": "Clickvora",
+    "paymentAlt": "Métodos de pago"
+  },
+  "planDetail": {
+    "back": "Volver a servicios",
+    "tax": "+ IVA",
+    "features": "Características Incluidas",
+    "notFound": {
+      "message": "// El plan seleccionado no existe o fue removido.",
+      "back": "Regresar"
+    },
+    "pricing": {
+      "investment": "Inversión del Plan",
+      "guarantee": "Garantía de desarrollo ágil y despliegue multiplataforma modular.",
+      "hire": "Contratar este plan",
+      "fastDelivery": "Entrega rápida",
+      "quality": "Calidad garantizada"
+    },
+    "related": {
+      "alternatives": "Alternativas Disponibles",
+      "title": "Otros planes",
+      "highlight": "personalizados",
+      "title2": "Otros planes bajo",
+      "viewDetail": "Ver detalle",
+      "addToCart": "Agregar directo al carrito"
+    }
+  },
+  "contactPage": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "contact": "Contacto"
+    },
+    "title": "Contacto",
+    "subtitle": "¿Tienes un proyecto en mente? Cuéntanos sobre él y te ayudaremos a hacerlo realidad.",
+    "form": {
+      "badge": "Formulario de Contacto",
+      "description": "Completa el formulario y nos pondremos en contacto contigo lo antes posible.",
+      "name": "Nombre *",
+      "email": "Email *",
+      "phone": "Teléfono",
+      "subject": "Asunto",
+      "message": "Cuéntanos sobre tu proyecto *",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "subjects": {
+        "quote": "Cotización",
+        "questions": "Dudas sobre el servicio",
+        "payments": "Pagos",
+        "other": "Otro"
+      }
+    },
+    "errors": {
+      "requiredFields": "Por favor, completa los campos requeridos (Nombre, Email y Mensaje).",
+      "default": "Ocurrió un error al enviar el mensaje."
+    },
+    "success": {
+      "message": "Mensaje enviado con éxito."
+    },
+    "info": {
+      "title": "Información de Contacto",
+      "email": "Email",
+      "phone": "Teléfono",
+      "address": "Dirección",
+      "addressLines": {
+        "line1": "123 Coly new road, Horwich",
+        "line2": "Bolton, BL7 9QN"
+      }
+    },
+    "images": {
+      "mobileApp": "Desarrollo de aplicaciones móviles",
+      "gaming": "Desarrollo de videojuegos",
+      "appInterface": "Diseño de interfaz de aplicación",
+      "unity": "Desarrollo con Unity"
+    }
+  },
+  "aboutPage": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "about": "Sobre Nosotros"
+    },
+    "hero": {
+      "title": {
+        "prefix": "Diseñamos el futuro en",
+        "highlight": "múltiples dimensiones",
+        "suffix": "."
+      },
+      "subtitle": "Con propósito y partnership en el centro, ofrecemos soluciones robustas con interfaces intuitivas y un estilo visual único en cada proyecto."
+    },
+    "vision": {
+      "title": "Nuestra Visión",
+      "description": "Clickvora reúne un equipo integrado de desarrolladores, estrategas y creativos para ofrecer a nuestros clientes una experiencia única y flexible para sus necesidades complejas en todos los ámbitos.",
+      "tag": "// EQUIPO INTEGRADO MULTIDISCIPLINARIO"
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Construimos experiencias digitales inmersivas que combinan tecnología de vanguardia, diseño innovador y narrativas cautivadoras para transformar ideas en realidades interactivas.",
+      "tag": "// EXCELENCIA EN RENDIMIENTO GARANTIZADA"
+    },
+    "history": {
+      "badge": "// Historia",
+      "title": "Conoce el viaje de nuestra empresa",
+      "genesis": {
+        "title": "Génesis del Equipo",
+        "desc": "Cultura remota nativa con flexibilidad absoluta para crear desde cualquier rincón del mundo."
+      },
+      "expansion": {
+        "title": "Expansión Digital",
+        "desc": "Consolidación de infraestructura distribuida enfocada en flujos ágiles y alto rendimiento."
+      },
+      "mobile": {
+        "title": "Ecosistemas Móviles",
+        "desc": "Evolución hacia la arquitectura de videojuegos y aplicativos de respuesta inmediata."
+      },
+      "integration": {
+        "title": "Integración Inteligente",
+        "desc": "Desarrollo de motores analíticos avanzados y automatización profunda basada en datos."
+      }
+    },
+    "advisors": {
+      "badge": "// Creative Advisors",
+      "title": "Conoce a nuestros asesores creativos",
+      "description": "Automatización y flujos de trabajo incluyen un constructor drag & drop, asignaciones automatizadas, disparadores condicionales e integraciones API. Estructuramos procesos claros para acelerar lanzamientos sin perder la calidad estética.",
+      "teamImage": "Equipo de trabajo",
+      "workflowImage": "Flujo de trabajo"
+    },
+    "cta": {
+      "title": {
+        "prefix": "¿Listo para construir la",
+        "highlight": "próxima dimensión",
+        "suffix": "?"
+      },
+      "subtitle": "Hagamos equipo para materializar tus flujos de trabajo, automatizaciones o el próximo hit interactivo.",
+      "button": "Únete a nosotros"
+    },
+    "images": {
+      "mobileApp": "Desarrollo de aplicaciones móviles",
+      "gaming": "Desarrollo de videojuegos",
+      "appInterface": "Diseño de interfaz de aplicación"
+    }
+  },
+  "pricing": {
+    "badge": "Planes",
+    "title": {
+      "prefix": "Tu visión no tiene límites:",
+      "highlight": "solo nuevas dimensiones",
+      "suffix": "por explorar."
+    },
+    "badges": {
+      "popular": "Popular",
+      "premium": "Premium",
+      "special": "Especial"
+    },
+    "currency": "MXN",
+    "tax": "IVA",
+    "buttons": {
+      "hire": "Contratar:",
+      "hiring": "Contratando...",
+      "hired": "¡Contratado!"
+    }
+  },
+  "services": {
+    "badge": "Servicios Individuales",
+    "title": {
+      "prefix": "Servicios a la",
+      "highlight": "medida"
+    },
+    "subtitle": "Elige el servicio que mejor se adapte a tus necesidades y personalízalo con el plan que prefieras.",
+    "recommended": "Recomendado",
+    "currency": "MXN",
+    "tax": "IVA",
+    "buttons": {
+      "add": "Agregar:",
+      "adding": "Agregando...",
+      "added": "¡Agregado!"
+    }
+  }
+}

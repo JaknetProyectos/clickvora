@@ -1,0 +1,301 @@
+"use client";
+
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { useCart } from "@/context/CartContext";
+import { usePlans } from "@/hooks/usePlan";
+import { Check, Loader2, Rocket, ShoppingCart, Sparkles, Star, Zap } from "lucide-react";
+import { useState } from "react";
+import { useTranslations } from "next-intl";
+
+export default function ServicesSection() {
+  const t = useTranslations("services");
+  const { addItem } = useCart();
+  const { productsList } = usePlans({ category: "services" });
+
+  const [selectedPlans, setSelectedPlans] = useState<Record<string, typeof productsList[0]["plans"][0]>>(() => {
+    const initials: Record<string, typeof productsList[0]["plans"][0]> = {};
+    productsList.forEach((service) => {
+      initials[service.id] = service.plans[0];
+    });
+    return initials;
+  });
+
+  // Estado para feedback de agregado al carrito
+  const [addingStatus, setAddingStatus] = useState<Record<string, { loading: boolean; success: boolean }>>({});
+
+  const handleSelectPlan = (serviceId: string, plan: typeof productsList[0]["plans"][0]) => {
+    setSelectedPlans((prev) => ({
+      ...prev,
+      [serviceId]: plan,
+    }));
+  };
+
+  const handleAddToCart = (serviceTitle: string, serviceId: string) => {
+    const currentPlan = selectedPlans[serviceId];
+    if (!currentPlan) return;
+
+    // Iniciar estado de carga
+    setAddingStatus((prev) => ({
+      ...prev,
+      [serviceId]: { loading: true, success: false },
+    }));
+
+    // Simular un pequeño delay para feedback visual
+    setTimeout(() => {
+      addItem({
+        id: currentPlan.id,
+        name: `${serviceTitle} - ${currentPlan.name}`,
+        price: currentPlan.price,
+        features: currentPlan.features,
+        description: currentPlan.description,
+        image: "/logo.png"
+      });
+
+      // Marcar como éxito
+      setAddingStatus((prev) => ({
+        ...prev,
+        [serviceId]: { loading: false, success: true },
+      }));
+
+      // Resetear el estado después de 2 segundos
+      setTimeout(() => {
+        setAddingStatus((prev) => ({
+          ...prev,
+          [serviceId]: { loading: false, success: false },
+        }));
+      }, 2000);
+    }, 500);
+  };
+
+  const formatPrice = (value: number) => {
+    return new Intl.NumberFormat("es-MX").format(value);
+  };
+
+  const serviceIcons = [Rocket, Zap, Star];
+  const serviceColors = ['#E8827A', '#A8D5E2', '#F4B8A4'];
+
+  return (
+    <section className="py-16 lg:py-24 bg-[#0F151C] pl-4 lg:pl-20 relative overflow-hidden">
+      {/* Decoración de fondo */}
+      <div className="absolute inset-0 opacity-[0.03]">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E8827A' fill-opacity='0.3'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+        }} />
+      </div>
+
+      {/* Círculos decorativos */}
+      <div className="absolute top-40 right-20 w-72 h-72 bg-[#E8827A]/5 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-40 left-20 w-96 h-96 bg-[#C5A4D9]/5 rounded-full blur-3xl animate-pulse delay-1000" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        {/* Section Header */}
+        <div className="text-center mb-12 lg:mb-16">
+          <div className="inline-flex items-center gap-2 bg-[#1A232E] border border-[#2A3A4A]/50 rounded-full px-4 py-2 mb-4">
+            <Sparkles className="w-4 h-4 text-[#F4B8A4]" />
+            <span className="text-xs sm:text-sm font-medium text-gray-300 uppercase tracking-wider">
+              {t("badge")}
+            </span>
+          </div>
+          <h2 className="font-jakarta font-bold text-2xl sm:text-3xl lg:text-4xl text-white">
+            {t("title.prefix")} <span className="text-[#E8827A]">{t("title.highlight")}</span>
+          </h2>
+          <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
+            {t("subtitle")}
+          </p>
+        </div>
+
+        {/* Services Grid */}
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8">
+          {productsList.map((service, index) => {
+            const currentSelectedPlan = selectedPlans[service.id];
+            const Icon = serviceIcons[index % serviceIcons.length];
+            const color = serviceColors[index % serviceColors.length];
+            const status = addingStatus[service.id] || { loading: false, success: false };
+
+            return (
+              <Card key={service.id} className="relative bg-[#1A232E] border-[#2A3A4A]/50 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-[#E8827A]/5 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full">
+                {/* Borde decorativo superior */}
+                <div
+                  className="h-1 transition-all duration-500"
+                  style={{
+                    background: `linear-gradient(90deg, ${color}, ${color}80)`,
+                  }}
+                />
+
+                <CardContent className="p-6 flex flex-col h-full">
+                  {/* Icono y título */}
+                  <div className="flex items-center gap-3 mb-4">
+                    <div
+                      className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+                      style={{
+                        backgroundColor: `${color}15`,
+                        border: `1px solid ${color}30`,
+                      }}
+                    >
+                      <Icon className="w-6 h-6" style={{ color }} />
+                    </div>
+                    <h3 className="font-jakarta font-bold text-lg text-white">
+                      {service.name}
+                    </h3>
+                  </div>
+
+                  {/* Lista de variantes seleccionables */}
+                  <div className="space-y-2.5 flex-1">
+                    {service.plans.map((plan, planIndex) => {
+                      const isSelected = currentSelectedPlan?.id === plan.id;
+                      const isFirst = planIndex === 0;
+
+                      return (
+                        <div
+                          key={plan.id}
+                          onClick={() => handleSelectPlan(service.id, plan)}
+                          className={`relative group p-3 rounded-xl border-2 transition-all duration-300 cursor-pointer ${isSelected
+                            ? `border-[${color}] bg-[${color}]/10 shadow-lg shadow-[${color}]/10`
+                            : 'border-[#2A3A4A] bg-transparent hover:border-[#3A4A5A] hover:bg-[#1A232E]/50'
+                            }`}
+                          style={{
+                            borderColor: isSelected ? color : '#2A3A4A',
+                            backgroundColor: isSelected ? `${color}10` : '',
+                          }}
+                        >
+                          <div className="flex items-start justify-between gap-3">
+                            <div className="flex gap-2.5 flex-1 min-w-0">
+                              {/* Checkbox circular interactivo - Estilo game */}
+                              <div className={`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border-2 transition-all duration-300 ${isSelected
+                                ? 'border-[#E8827A] bg-[#E8827A] text-white shadow-lg shadow-[#E8827A]/30'
+                                : 'border-[#3A4A5A] bg-transparent group-hover:border-[#5A6A7A]'
+                                }`}>
+                                {isSelected && <Check className="h-3 w-3 stroke-[3]" />}
+                              </div>
+
+                              <div className="flex-1 min-w-0">
+                                <div className="flex items-center gap-2 mb-1">
+                                  <span className="text-sm font-medium text-white">
+                                    {plan.name}
+                                  </span>
+                                  {isFirst && (
+                                    <span
+                                      className="text-[8px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full"
+                                      style={{
+                                        backgroundColor: `${color}20`,
+                                        color: color,
+                                        border: `1px solid ${color}30`,
+                                      }}
+                                    >
+                                      {t("recommended")}
+                                    </span>
+                                  )}
+                                </div>
+                                <div className="flex flex-wrap gap-1 mb-1.5">
+                                  {plan.features.slice(0, 2).map((feature, featureIndex) => (
+                                    <Badge
+                                      key={featureIndex}
+                                      className="text-[9px] px-2 py-0.5 rounded-full transition-colors"
+                                      style={{
+                                        backgroundColor: isSelected ? `${color}20` : '#2A3A4A',
+                                        color: isSelected ? color : '#8A9AAA',
+                                        border: `1px solid ${isSelected ? color : '#3A4A5A'}`,
+                                      }}
+                                    >
+                                      {feature}
+                                    </Badge>
+                                  ))}
+                                  {plan.features.length > 2 && (
+                                    <Badge
+                                      className="text-[9px] px-2 py-0.5 rounded-full"
+                                      style={{
+                                        backgroundColor: '#2A3A4A',
+                                        color: '#8A9AAA',
+                                        border: '1px solid #3A4A5A',
+                                      }}
+                                    >
+                                      +{plan.features.length - 2}
+                                    </Badge>
+                                  )}
+                                </div>
+                                <p className="text-gray-400 text-xs leading-relaxed line-clamp-1">
+                                  {plan.description}
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="text-right flex-shrink-0 pl-1">
+                              <div className="font-jakarta font-bold text-sm text-white">
+                                {t("currency")} {formatPrice(plan.price)}
+                              </div>
+                              <span className="text-[9px] text-gray-500 block">+ {t("tax")}</span>
+                            </div>
+                          </div>
+
+                          {/* Efecto de brillo en hover */}
+                          {isSelected && (
+                            <div
+                              className="absolute inset-0 rounded-xl opacity-20 pointer-events-none"
+                              style={{
+                                background: `radial-gradient(circle at 70% 30%, ${color}, transparent 70%)`,
+                              }}
+                            />
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
+
+                  {/* Botón Dinámico - Estilo game con feedback */}
+                  <Button
+                    onClick={() => handleAddToCart(service.name, service.id)}
+                    disabled={status.loading}
+                    className={`relative w-full mt-6 text-white rounded-full py-5 text-sm font-medium group transition-all duration-300 overflow-hidden ${status.success
+                      ? 'bg-green-500 hover:bg-green-600 shadow-lg shadow-green-500/30'
+                      : status.loading
+                        ? 'bg-[#2A3A4A] hover:bg-[#2A3A4A] cursor-wait'
+                        : 'bg-gradient-to-r from-[#E8827A] to-[#C5A4D9] hover:from-[#E8827A]/90 hover:to-[#C5A4D9]/90 shadow-xl shadow-[#E8827A]/20 hover:shadow-[#E8827A]/40 hover:scale-105'
+                      }`}
+                  >
+                    <span className="relative z-10 flex items-center justify-center">
+                      {status.loading ? (
+                        <>
+                          <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                          {t("buttons.adding")}
+                        </>
+                      ) : status.success ? (
+                        <>
+                          <Check className="mr-2 h-4 w-4" />
+                          {t("buttons.added")}
+                        </>
+                      ) : (
+                        <>
+                          {t("buttons.add")} {currentSelectedPlan?.name}
+                          <ShoppingCart className="ml-2 w-4 h-4 group-hover:scale-110 group-hover:rotate-[-5deg] transition-all duration-300" />
+                        </>
+                      )}
+                    </span>
+                    {!status.loading && !status.success && (
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+                    )}
+                  </Button>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+
+        {/* Decoración inferior */}
+        <div className="mt-16 flex justify-center gap-2">
+          {[...Array(3)].map((_, i) => (
+            <div
+              key={i}
+              className="w-2 h-2 rounded-full transition-all duration-300"
+              style={{
+                backgroundColor: i === 0 ? '#E8827A' : '#2A3A4A',
+                opacity: i === 0 ? 1 : 0.3,
+              }}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
