@@ -4,10 +4,10 @@ import * as React from "react";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const SUPPORT_EMAIL = "asistencia@datnex.com.mx";
+const SUPPORT_EMAIL = "cotizacion@clickvora.com.mx";
 const BRAND_NAME = "Clickvora";
 const BRAND_URL = "clickvora.com.mx";
-const BRAND_LOGO = "https://nexorithm.com.mx/title-dark.png";
+const BRAND_LOGO = "https://clickvora.com.mx/title.png";
 
 // Campos estándar para filtrarlos en la sección de "Campos adicionales"
 const STANDARD_FIELDS = ["nombre", "email", "mensaje", "asunto"];
