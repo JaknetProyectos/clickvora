@@ -7,13 +7,12 @@ type LegalStyleProps = {
 
 export default function LegalStyle({
   mode = "dark",
-  accent = "#f8e04b",
+  accent = "#e06c75",
 }: LegalStyleProps) {
   const isDark = mode === "dark";
 
   const styles = `
     .legal-container {
-      background: ${isDark ? "#0b1020" : "#ffffff"};
       color: ${isDark ? "#e5e7eb" : "#1f2937"};
       line-height: 1.7;
       font-family: sans-serif;
