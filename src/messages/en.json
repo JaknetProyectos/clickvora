@@ -564,5 +564,51 @@
       "adding": "Adding...",
       "added": "Added!"
     }
+  },
+  "Emails": {
+    "clickvora": {
+      "contact": {
+        "businessSubject": "🚀 [Lead] {asunto} - {nombre}",
+        "clientSubject": "✓ We received your request - Clickvora",
+        "businessTitle": "🎮 New Development Lead",
+        "businessSubtitle": "A new project request has been received from the website.",
+        "clientTitle": "✅ We have received your message",
+        "clientSubtitle": "Thank you for trusting us with your video game or mobile app project.",
+        "badgeBusiness": "Lead Data",
+        "badgeClient": "Summary",
+        "nameLabel": "👤 Name",
+        "emailLabel": "📧 Email Address",
+        "messageLabel": "💬 Message",
+        "clientAutoMessage": "✦ This is an automatic confirmation email. Our development team will review your request and contact you shortly.",
+        "clientNextSteps": "🚀 Next steps: We will analyze your idea and present you with an initial proposal within 48 hours.",
+        "businessAction": "📌 Recommended action: Review the details and assign the lead to the development team for follow-up.",
+        "footerCopyright": "© {year} {brand} — All rights reserved.",
+        "footerTagline": "🎮 Video Game & Mobile App Development · Interactive experiences that connect",
+        "headerSub": "🎮 • Video Game & Mobile App Development"
+      },
+      "checkout": {
+        "clientSubject": "✓ Your purchase receipt #{orderId} - Clickvora",
+        "businessSubject": "💰 [Sale] Order #{orderId} - ${amount} MXN",
+        "clientTitle": "Purchase Confirmation",
+        "clientSubtitle": "Thank you for your purchase. Your order #{orderId} has been successfully processed.",
+        "businessTitle": "¡New Sale Processed!",
+        "businessSubtitle": "A new successful payment has been recorded for the amount of ${amount} MXN.",
+        "headerSub": "• Video Game & Mobile App Development •",
+        "orderIdLabel": "Order ID",
+        "paymentDateLabel": "Payment Date",
+        "customerSectionBusiness": "Buyer",
+        "customerSectionClient": "Billing Information",
+        "customerNameLabel": "Customer",
+        "customerAddressLabel": "Address",
+        "customerCompanyLabel": "Company",
+        "operationDetailsLabel": "Operation Details",
+        "productSummaryLabel": "Product Summary",
+        "totalPaidLabel": "Total Paid",
+        "clientFooterNote": "Charges will appear on your statement under the concept of development services. If you require a tax invoice, reply to this email with your tax information within 72 hours.",
+        "businessFooterNote": "Action: Review the sale details and follow up with the client to start the project.",
+        "footerCopyright": "© {year} {brand} — All rights reserved.",
+        "footerTagline": "Video Game & Mobile App Development · Interactive experiences that connect"
+      }
+    }
   }
 }

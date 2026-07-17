@@ -564,5 +564,51 @@
       "adding": "Agregando...",
       "added": "¡Agregado!"
     }
+  },
+  "Emails": {
+    "clickvora": {
+      "contact": {
+        "businessSubject": "🚀 [Lead] {asunto} - {nombre}",
+        "clientSubject": "✓ Recibimos tu solicitud - Clickvora",
+        "businessTitle": "🎮 Nuevo Lead de Desarrollo",
+        "businessSubtitle": "Se ha recibido una nueva solicitud de proyecto desde el sitio web.",
+        "clientTitle": "✅ Hemos recibido tu mensaje",
+        "clientSubtitle": "Gracias por confiar en nosotros para tu proyecto de videojuegos o app móvil.",
+        "badgeBusiness": "Datos del Lead",
+        "badgeClient": "Resumen",
+        "nameLabel": "👤 Nombre",
+        "emailLabel": "📧 Correo Electrónico",
+        "messageLabel": "💬 Mensaje",
+        "clientAutoMessage": "✦ Este es un correo automático de confirmación. Nuestro equipo de desarrollo revisará tu solicitud y te contactará a la brevedad.",
+        "clientNextSteps": "🚀 Próximos pasos: Analizaremos tu idea y te presentaremos una propuesta inicial en menos de 48 horas.",
+        "businessAction": "📌 Acción recomendada: Revisa los detalles y asigna el lead al equipo de desarrollo para dar seguimiento.",
+        "footerCopyright": "© {year} {brand} — Todos los derechos reservados.",
+        "footerTagline": "🎮 Desarrollo de Videojuegos & Apps Móviles · Experiencias interactivas que conectan",
+        "headerSub": "🎮 • Desarrollo de Videojuegos & Apps Móviles"
+      },
+      "checkout": {
+        "clientSubject": "✓ Tu recibo de compra #{orderId} - Clickvora",
+        "businessSubject": "💰 [Venta] Orden #{orderId} - ${amount} MXN",
+        "clientTitle": "Confirmación de Compra",
+        "clientSubtitle": "Gracias por tu compra. Tu orden #{orderId} ha sido procesada con éxito.",
+        "businessTitle": "¡Nueva Venta Procesada!",
+        "businessSubtitle": "Se ha registrado un nuevo pago exitoso por un monto de ${amount} MXN.",
+        "headerSub": "• Desarrollo de Videojuegos & Apps Móviles •",
+        "orderIdLabel": "ID de Orden",
+        "paymentDateLabel": "Fecha de Pago",
+        "customerSectionBusiness": "Comprador",
+        "customerSectionClient": "Datos de Facturación",
+        "customerNameLabel": "Cliente",
+        "customerAddressLabel": "Dirección",
+        "customerCompanyLabel": "Empresa",
+        "operationDetailsLabel": "Detalles de la Operación",
+        "productSummaryLabel": "Resumen de Productos",
+        "totalPaidLabel": "Total Pagado",
+        "clientFooterNote": "Los cargos aparecerán en tu estado de cuenta bajo el concepto de servicios de desarrollo. Si requieres factura fiscal, responde a este correo con tus datos fiscales en un plazo no mayor a 72 horas.",
+        "businessFooterNote": "Acción: Revisa los detalles de la venta y da seguimiento al cliente para el inicio del proyecto.",
+        "footerCopyright": "© {year} {brand} — Todos los derechos reservados.",
+        "footerTagline": "Desarrollo de Videojuegos & Apps Móviles · Experiencias interactivas que conectan"
+      }
+    }
   }
 }

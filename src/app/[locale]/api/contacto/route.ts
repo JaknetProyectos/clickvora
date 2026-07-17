@@ -1,6 +1,7 @@
+// app/api/contacto-clickvora/route.ts
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
-import * as React from "react";
+import { getTranslations } from "next-intl/server";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -10,12 +11,12 @@ const BRAND_URL = "clickvora.com.mx";
 const BRAND_LOGO = "https://clickvora.com.mx/title.png";
 
 // Campos estándar para filtrarlos en la sección de "Campos adicionales"
-const STANDARD_FIELDS = ["nombre", "email", "mensaje", "asunto"];
+const STANDARD_FIELDS = ["locale", "nombre", "email", "mensaje", "asunto"];
 
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const { nombre, email, mensaje, asunto = "Nuevo mensaje de contacto" } = body;
+    const { locale, nombre, email, mensaje, asunto = "Nuevo mensaje de contacto" } = body;
 
     if (!nombre || !email || !mensaje) {
       return NextResponse.json(
@@ -24,6 +25,9 @@ export async function POST(req: Request) {
       );
     }
 
+    // Cargar traducciones con el locale recibido
+    const t = await getTranslations({ locale, namespace: 'Emails' });
+
     // Extraer de forma dinámica cualquier propiedad extra enviada en el lead
     const extraFields = Object.entries(body).filter(
       ([key, val]) => !STANDARD_FIELDS.includes(key) && val !== undefined && val !== null && val !== ""
@@ -31,37 +35,45 @@ export async function POST(req: Request) {
 
     // 1. EMAIL PARA EL NEGOCIO (LEAD DE CONTACTO)
     const businessEmailHtml = renderEmailTemplate({
-      title: "🎮 Nuevo Lead de Desarrollo",
-      subtitle: "Se ha recibido una nueva solicitud de proyecto desde el sitio web.",
+      title: t('contact.businessTitle'),
+      subtitle: t('contact.businessSubtitle'),
       nombre,
       email,
       mensaje,
       extraFields,
       isBusiness: true,
+      t,
+      brandLogo: BRAND_LOGO,
+      brandName: BRAND_NAME,
+      brandUrl: BRAND_URL,
     });
 
     await resend.emails.send({
       from: `${BRAND_NAME} Leads <${SUPPORT_EMAIL}>`,
       to: SUPPORT_EMAIL,
-      subject: `🚀 [Lead] ${asunto} - ${nombre}`,
+      subject: t('contact.businessSubject', { asunto, nombre }),
       html: businessEmailHtml,
     });
 
     // 2. EMAIL PARA EL CLIENTE (CONFIRMACIÓN DE RECEPCIÓN)
     const clientEmailHtml = renderEmailTemplate({
-      title: "✅ Hemos recibido tu mensaje",
-      subtitle: "Gracias por confiar en nosotros para tu proyecto de videojuegos o app móvil.",
+      title: t('contact.clientTitle'),
+      subtitle: t('contact.clientSubtitle'),
       nombre,
       email,
       mensaje,
       extraFields,
       isBusiness: false,
+      t,
+      brandLogo: BRAND_LOGO,
+      brandName: BRAND_NAME,
+      brandUrl: BRAND_URL,
     });
 
     await resend.emails.send({
       from: `${BRAND_NAME} <${SUPPORT_EMAIL}>`,
       to: email,
-      subject: `✓ Recibimos tu solicitud - ${BRAND_NAME}`,
+      subject: t('contact.clientSubject'),
       html: clientEmailHtml,
     });
 
@@ -83,6 +95,10 @@ function renderEmailTemplate({
   mensaje,
   extraFields,
   isBusiness,
+  t,
+  brandLogo,
+  brandName,
+  brandUrl,
 }: {
   title: string;
   subtitle: string;
@@ -91,7 +107,13 @@ function renderEmailTemplate({
   mensaje: string;
   extraFields: [string, any][];
   isBusiness: boolean;
+  t: any;
+  brandLogo: string;
+  brandName: string;
+  brandUrl: string;
 }) {
+  const year = new Date().getFullYear();
+
   return `
     <!DOCTYPE html>
     <html lang="es">
@@ -275,8 +297,8 @@ function renderEmailTemplate({
 
           <!-- Header Logo -->
           <div class="header">
-            <img src="${BRAND_LOGO}" alt="${BRAND_NAME}" class="logo" />
-            <div class="header-sub">🎮 • Desarrollo de Videojuegos & Apps Móviles</div>
+            <img src="${brandLogo}" alt="${brandName}" class="logo" />
+            <div class="header-sub">${t('contact.headerSub')}</div>
           </div>
 
           <!-- Body Content -->
@@ -285,16 +307,16 @@ function renderEmailTemplate({
             <p class="subtitle">${subtitle}</p>
 
             <div class="section-label">
-              <span class="badge">${isBusiness ? 'Datos del Lead' : 'Resumen'}</span>
+              <span class="badge">${isBusiness ? t('contact.badgeBusiness') : t('contact.badgeClient')}</span>
             </div>
 
             <div class="card">
               <div class="field">
-                <div class="label">👤 Nombre</div>
+                <div class="label">${t('contact.nameLabel')}</div>
                 <div class="value">${nombre}</div>
               </div>
               <div class="field">
-                <div class="label">📧 Correo Electrónico</div>
+                <div class="label">${t('contact.emailLabel')}</div>
                 <div class="value value-email">${email}</div>
               </div>
 
@@ -307,29 +329,29 @@ function renderEmailTemplate({
               `).join('')}
             </div>
 
-            <div class="section-label">💬 Mensaje</div>
+            <div class="section-label">${t('contact.messageLabel')}</div>
             <div class="msg-box">${mensaje}</div>
 
             ${!isBusiness ? `
               <div class="divider"></div>
               <p style="font-size: 13px; color: #6B7A8A; line-height: 1.6; font-style: italic;">
-                ✦ Este es un correo automático de confirmación. Nuestro equipo de desarrollo revisará tu solicitud y te contactará a la brevedad.
+                ${t('contact.clientAutoMessage')}
               </p>
               <p style="font-size: 13px; color: #6B7A8A; line-height: 1.6;">
-                🚀 <strong style="color: #E8827A;">Próximos pasos:</strong> Analizaremos tu idea y te presentaremos una propuesta inicial en menos de 48 horas.
+                ${t('contact.clientNextSteps')}
               </p>
             ` : `
               <div class="divider"></div>
               <p style="font-size: 13px; color: #6B7A8A; line-height: 1.6;">
-                📌 <strong style="color: #E8827A;">Acción recomendada:</strong> Revisa los detalles y asigna el lead al equipo de desarrollo para dar seguimiento.
+                ${t('contact.businessAction')}
               </p>
             `}
           </div>
 
           <!-- Footer -->
           <div class="footer">
-            © ${new Date().getFullYear()} <a href="${BRAND_URL}">${BRAND_NAME}</a> — Todos los derechos reservados.<br/>
-            <span class="tagline">🎮 Desarrollo de Videojuegos & Apps Móviles · Experiencias interactivas que conectan</span>
+            ${t('contact.footerCopyright', { year, url: brandUrl, brand: brandName })}<br/>
+            <span class="tagline">${t('contact.footerTagline')}</span>
           </div>
 
         </div>
