@@ -355,7 +355,7 @@
       "scheduleHours": "Mon - Fri: 9:00 - 18:00",
       "addressLines": {
         "line1": "AVENIDA HOMERO, N°404 FLOOR 5,",
-        "line2": "COLONIA POLANCO V SECCIÓN,",
+        "line2": "COLONIA POLANCO V SECCION,",
         "line3": "MIGUEL HIDALGO DISTRICT, CP. 11560,",
         "line4": "MEXICO CITY."
       }
@@ -453,8 +453,8 @@
       "phone": "Phone",
       "address": "Address",
       "addressLines": {
-        "line1": "123 Coly new road, Horwich",
-        "line2": "Bolton, BL7 9QN"
+        "line1": "HOMERO STREEET, 404 FLOOR 5, COLONIA POLANCO V SECTION, MIGUEL HIDALGO DISTRICT, ",
+        "line2": "CP. 11560, MEXICO CITY +52 1 55 5244 5689"
       }
     },
     "images": {
