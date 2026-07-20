@@ -331,8 +331,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wider">{t("info.email")}</p>
-                    <a href="mailto:info@saliver.com" className="text-gray-300 hover:text-[#E8827A] transition-colors duration-300 text-sm">
-                      info@saliver.com
+                    <a href="cotizacion@clickvora.com.mx" className="text-gray-300 hover:text-[#E8827A] transition-colors duration-300 text-sm">
+                      cotizacion@clickvora.com.mx
                     </a>
                   </div>
                 </div>
@@ -344,7 +344,7 @@ export default function ContactPage() {
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wider">{t("info.phone")}</p>
                     <a href="tel:+12345678900" className="text-gray-300 hover:text-[#A8D5E2] transition-colors duration-300 text-sm">
-                      +(123) 456 789 00
+                      +52 1 55 5244 5689
                     </a>
                   </div>
                 </div>
@@ -380,7 +380,7 @@ export default function ContactPage() {
         <div className="bg-[#1A232E] rounded-3xl overflow-hidden border border-[#2A3A4A]/50 shadow-xl">
           <div className="w-full h-64 bg-[#0F151C]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5466479523775!2d-0.11951919999999999!3d51.5031864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b900d26973%3A0x4291f3172409ea92!2sOjo%20de%20Londres!5e0!3m2!1ses-419!2smx!4v1783639340781!5m2!1ses-419!2smx"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.1975795817248!2d-99.1887582305509!3d19.43553434410102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8aa36ee3f39%3A0x9cc974bcc81656e9!2sAv.%20Homero%20404-PISO%205%2C%20Polanco%2C%20Polanco%20V%20Secc%2C%20Miguel%20Hidalgo%2C%2011560%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1784585089566!5m2!1ses-419!2smx"
               className="w-full h-full border-0"
               allowFullScreen={false}
               loading="lazy"
