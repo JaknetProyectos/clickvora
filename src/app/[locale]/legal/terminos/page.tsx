@@ -7,17 +7,15 @@ function LegalEs() {
   return (
     <div className="legal-container">
       <LegalStyle />
-
       <section>
-        <h1>ACEPTACIÓN Y ALCANCE DEL ACUERDO</h1>
-
+        <h2>ACEPTACIÓN Y ALCANCE DEL ACUERDO</h2>
         <p>Bienvenido a CLICKVORA. Al acceder, navegar o utilizar el sitio web http://clickvora.com.mx/ y cualquiera de nuestros servicios digitales, usted reconoce haber leído, comprendido y aceptado estar legalmente vinculado por estos Términos y Condiciones, así como por nuestro Aviso de Privacidad y demás políticas publicadas.</p>
         <p>Si no está de acuerdo con alguna disposición aquí establecida, le solicitamos abstenerse de utilizar nuestra plataforma y servicios.</p>
 
         <h2>IDENTIFICACIÓN DEL PRESTADOR DE SERVICIOS</h2>
-        <p>Denominación social: ANTONE ARRIVALS, S.A. DE CV</p>
+        <p>Denominación social: CONG TECNOLOGICS S.A. DE C.V.</p>
         <p>Nombre comercial: CLICKVORA</p>
-        <p>Domicilio corporativo: Avenida Homero N° 404, Piso 5, Colonia Polanco V Sección, Alcaldía Miguel Hidalgo, C.P. 11560, Ciudad de México.</p>
+        <p>Domicilio corporativo: RODOLFO GAONA 3, INTERIOR 502 PISO 5, COLONIA PERIODISTA, ALCALDÍA MIGUEL HIDALGO, CP.11220, CIUDAD DE MÉXICO</p>
         <p>Sitio web: http://clickvora.com.mx/</p>
         <p>Contacto comercial: cotizacion@clickvora.com.mx</p>
         <p>Estos términos se rigen conforme a la legislación mercantil, civil y de protección al consumidor aplicable en la Ciudad de México y en los Estados Unidos Mexicanos.</p>
@@ -63,10 +61,8 @@ function LegalEs() {
         </ul>
 
         <h2>ESTRUCTURA DE INVERSIÓN</h2>
-
         <h3>Moneda y Denominación</h3>
         <p>Todos los precios se expresan en Pesos Mexicanos (MXN) más el 16% de Impuesto al Valor Agregado (IVA) conforme a la legislación fiscal vigente.</p>
-
         <h3>Métodos de Pago Aceptados</h3>
         <ul>
           <li>Tarjetas de crédito y débito a través de nuestra plataforma en línea.</li>
@@ -74,7 +70,6 @@ function LegalEs() {
         </ul>
 
         <h2>OBLIGACIONES Y RESPONSABILIDADES DEL CLIENTE</h2>
-
         <h3>1. Información y Materiales</h3>
         <p>En los casos en que el servicio contratado lo requiera, el cliente se compromete a:</p>
         <ul>
@@ -83,14 +78,12 @@ function LegalEs() {
           <li>Facilitar credenciales de acceso a sistemas, servidores o plataformas, cuando sea indispensable para la correcta prestación del servicio.</li>
           <li>Brindar retroalimentación y aprobaciones dentro de los plazos establecidos.</li>
         </ul>
-
         <h3>2. Colaboración Activa</h3>
         <ul>
           <li>Designar un responsable con poder de decisión para mantener comunicación constante.</li>
           <li>Revisar y aprobar los entregables conforme al calendario acordado.</li>
           <li>Reconocer que las demoras en aprobaciones o en la entrega de materiales podrán extender los plazos de entrega sin responsabilidad para CLICKVORA.</li>
         </ul>
-
         <h3>3. Derechos de Propiedad Intelectual</h3>
         <ul>
           <li>Garantizar que posee los derechos legales sobre todos los materiales proporcionados.</li>
@@ -99,7 +92,6 @@ function LegalEs() {
         </ul>
 
         <h2>OBLIGACIONES Y COMPROMISOS DE CLICKVORA</h2>
-
         <h3>Desarrollo Profesional</h3>
         <ul>
           <li>Ejecutar proyectos con estándares profesionales de calidad</li>
@@ -107,14 +99,12 @@ function LegalEs() {
           <li>Mantener comunicación regular sobre avances del proyecto</li>
           <li>Entregar productos funcionales conforme a lo contratado</li>
         </ul>
-
         <h3>Confidencialidad</h3>
         <ul>
           <li>Proteger información sensible del cliente bajo acuerdos de confidencialidad</li>
           <li>No divulgar detalles de proyectos sin autorización expresa</li>
           <li>Implementar medidas de seguridad para resguardo de información</li>
         </ul>
-
         <h3>Plazos de Entrega</h3>
         <ul>
           <li>Cumplir cronogramas establecidos salvo causas de fuerza mayor o demoras atribuibles al cliente</li>
@@ -123,7 +113,6 @@ function LegalEs() {
         </ul>
 
         <h2>PROPIEDAD INTELECTUAL Y DERECHOS DE AUTOR</h2>
-
         <h3>Titularidad de Derechos</h3>
         <p>Al completarse el pago total del proyecto, el cliente adquiere los derechos de uso comercial sobre el producto final entregado (código ejecutable, aplicación compilada, activos visuales finales).</p>
         <p>CLICKVORA retiene:</p>
@@ -132,12 +121,10 @@ function LegalEs() {
           <li>Libertad para reutilizar técnicas, herramientas y conocimientos generales en proyectos futuros</li>
           <li>Derecho a incluir el proyecto en portafolio comercial (previa notificación al cliente)</li>
         </ul>
-
         <h3>Licencias de Terceros</h3>
         <p>Algunos proyectos pueden utilizar bibliotecas, frameworks o assets con licencias específicas. El cliente debe respetar los términos de dichas licencias, las cuales serán informadas durante el desarrollo.</p>
 
         <h2>LIMITACIONES Y EXENCIONES DE RESPONSABILIDAD</h2>
-
         <h3>Alcance de Servicios</h3>
         <p>CLICKVORA se limita a desarrollar productos digitales según especificaciones acordadas. No garantizamos:</p>
         <ul>
@@ -146,7 +133,6 @@ function LegalEs() {
           <li>Compatibilidad perpetua con actualizaciones futuras de sistemas operativos o plataformas</li>
           <li>Funcionamiento en dispositivos no especificados en requerimientos técnicos</li>
         </ul>
-
         <h3>Contenidos de Terceros</h3>
         <p>No somos responsables por:</p>
         <ul>
@@ -155,10 +141,8 @@ function LegalEs() {
           <li>Contenidos generados por usuarios finales de la aplicación</li>
           <li>Transacciones económicas entre el cliente y sus usuarios finales</li>
         </ul>
-
         <h3>Limitación de Daños</h3>
         <p>Nuestra responsabilidad máxima ante cualquier reclamación se limita al monto total pagado por el cliente para el proyecto específico en cuestión. CLICKVORA no será responsable por daños indirectos, lucro cesante, pérdida de datos o consecuencias derivadas del uso del producto entregado.</p>
-
         <h3>Seguridad y Ataques Cibernéticos</h3>
         <p>Aunque implementamos prácticas de seguridad estándar, ningún sistema es completamente invulnerable. No garantizamos inmunidad absoluta contra ataques informáticos, hackeos o brechas de seguridad. El cliente debe implementar sus propias medidas de protección y monitoreo.</p>
 
@@ -173,7 +157,6 @@ function LegalEs() {
         </ul>
 
         <h2>USO ACEPTABLE DEL SITIO WEB</h2>
-
         <h3>Conductas Prohibidas</h3>
         <p>Al utilizar http://clickvora.com.mx/, usted acepta NO:</p>
         <ul>
@@ -185,7 +168,6 @@ function LegalEs() {
           <li>Difamar, acosar o realizar actividades ilegales a través de la plataforma</li>
           <li>Hacerse pasar por CLICKVORA, su personal o representantes</li>
         </ul>
-
         <h3>Consecuencias por Violaciones</h3>
         <p>El incumplimiento de estas normas puede resultar en: bloqueo de acceso, cancelación de servicios, acciones legales y reclamación de daños y perjuicios.</p>
 
@@ -213,13 +195,10 @@ function LegalEs() {
         <p>En tales casos, los plazos se extenderán razonablemente y se evaluará la viabilidad de continuar el proyecto.</p>
 
         <h2>RESOLUCIÓN DE CONTROVERSIAS</h2>
-
         <h3>Negociación Directa</h3>
         <p>Ante cualquier desacuerdo, las partes se comprometen inicialmente a resolver mediante comunicación directa y negociación de buena fe.</p>
-
         <h3>Mediación</h3>
         <p>Si la negociación fracasa, las partes intentarán resolver mediante mediación a través de la Procuraduría Federal del Consumidor (PROFECO) cuando el cliente califique como consumidor final.</p>
-
         <h3>Jurisdicción Aplicable</h3>
         <p>Para cualquier controversia que no pueda resolverse amigablemente, ambas partes se someten expresamente a las leyes aplicables y jurisdicción de los tribunales competentes de la Ciudad de México, renunciando a cualquier otro fuero que pudiera corresponderles.</p>
 
@@ -237,7 +216,7 @@ function LegalEs() {
         <h2>INFORMACIÓN DE CONTACTO</h2>
         <p>Para consultas, aclaraciones o notificaciones relacionadas con estos Términos y Condiciones:</p>
         <p>Correo electrónico: cotizacion@clickvora.com.mx</p>
-        <p>Domicilio: Avenida Homero N° 404, Piso 5, Colonia Polanco V Sección, Alcaldía Miguel Hidalgo, C.P. 11560, Ciudad de México.</p>
+        <p>Domicilio: RODOLFO GAONA 3, INTERIOR 502 PISO 5, COLONIA PERIODISTA, ALCALDÍA MIGUEL HIDALGO, CP.11220, CIUDAD DE MÉXICO</p>
         <p>Horario de atención: Lunes a Viernes, 9:00 – 18:00 hrs (Tiempo del Centro de México)</p>
 
         <h2>DECLARACIÓN FINAL DE ACEPTACIÓN</h2>
@@ -248,10 +227,9 @@ function LegalEs() {
           <li>✓ Aceptar estar legalmente vinculado por todas las disposiciones aquí establecidas</li>
           <li>✓ Contar con autoridad para comprometer a la empresa u organización que representa (cuando aplique)</li>
         </ul>
-
-        <p>ANTONE ARRIVALS, S.A. DE CV</p>
+        <p>CONG TECNOLOGICS S.A. DE C.V.</p>
         <p>CLICKVORA – Transformamos Ideas en Experiencias Digitales</p>
-        <p>Estos Términos y Condiciones constituyen un acuerdo legalmente vinculante entre usted y ANTONE ARRIVALS, S.A. DE CV. Consérvese para su referencia futura.</p>
+        <p>Estos Términos y Condiciones constituyen un acuerdo legalmente vinculante entre usted y CONG TECNOLOGICS S.A. DE C.V. Consérvese para su referencia futura.</p>
       </section>
     </div>
   );
@@ -262,17 +240,17 @@ function LegalEn() {
     <div className="legal-container">
       <LegalStyle />
       <section>
-        <h1>ACCEPTANCE AND SCOPE OF THE AGREEMENT</h1>
-        <p>Welcome to CLICKVORA. By accessing, browsing, or using the website http://clickvora.com.mx/ and any of our digital services, you acknowledge that you have read, understood, and agreed to be legally bound by these Terms and Conditions, as well as by our Privacy Notice and other published policies.</p>
-        <p>If you do not agree with any provision established herein, we request that you refrain from using our platform and services.</p>
+        <h2>ACCEPTANCE AND SCOPE OF THE AGREEMENT</h2>
+        <p>Welcome to CLICKVORA. By accessing, browsing, or using the website http://clickvora.com.mx/ and any of our digital services, you acknowledge that you have read, understood, and accepted to be legally bound by these Terms and Conditions, as well as by our Privacy Notice and other published policies.</p>
+        <p>If you do not agree with any provision established herein, we ask you to refrain from using our platform and services.</p>
 
         <h2>IDENTIFICATION OF THE SERVICE PROVIDER</h2>
-        <p>Corporate name: ANTONE ARRIVALS, S.A. DE CV</p>
+        <p>Legal name: CONG TECNOLOGICS S.A. DE C.V.</p>
         <p>Trade name: CLICKVORA</p>
-        <p>Corporate domicile: Avenida Homero N° 404, Piso 5, Colonia Polanco V Sección, Alcaldía Miguel Hidalgo, C.P. 11560, Ciudad de México.</p>
+        <p>Corporate address: RODOLFO GAONA 3, INTERIOR 502 PISO 5, COLONIA PERIODISTA, ALCALDÍA MIGUEL HIDALGO, CP.11220, CIUDAD DE MÉXICO</p>
         <p>Website: http://clickvora.com.mx/</p>
         <p>Commercial contact: cotizacion@clickvora.com.mx</p>
-        <p>These terms are governed in accordance with the commercial, civil, and consumer protection legislation applicable in Mexico City and the United Mexican States.</p>
+        <p>These terms are governed in accordance with the commercial, civil, and consumer protection legislation applicable in Mexico City and in the United Mexican States.</p>
 
         <h2>DESCRIPTION OF SERVICES OFFERED</h2>
         <p>CLICKVORA is a company specialized in digital development solutions, offering:</p>
@@ -283,22 +261,22 @@ function LegalEn() {
           <li>Development of 3D experiences from basic prototypes to advanced productions</li>
           <li>Level design, game balancing, and progression systems</li>
           <li>Implementation of multiplayer mechanics (local or online)</li>
-          <li>Monetization systems: advertisements, in-app purchases, subscriptions</li>
+          <li>Monetization systems: ads, in-app purchases, subscriptions</li>
         </ul>
 
-        <h3>Corporate Gamification</h3>
+        <h3>Business Gamification</h3>
         <ul>
           <li>Development of interactive games for corporate training</li>
-          <li>Gamified experiences customized according to organizational objectives</li>
-          <li>Complete platforms with points, rewards, and performance metrics systems</li>
-          <li>Integration with internal corporate systems (CRM, ERP)</li>
+          <li>Customized gamified experiences according to organizational objectives</li>
+          <li>Complete platforms with point systems, rewards, and performance metrics</li>
+          <li>Integration with internal business systems (CRM, ERP)</li>
         </ul>
 
         <h3>Mobile Application Creation</h3>
         <ul>
           <li>Hybrid applications for iOS and Android</li>
-          <li>Tailor-made apps from basic versions (3-5 screens) to complex solutions</li>
-          <li>Custom UI/UX design and optimized user experience</li>
+          <li>Custom apps ranging from basic versions (3-5 screens) to complex solutions</li>
+          <li>Customized UI/UX design and optimized user experience</li>
           <li>Integration of functionalities: push notifications, geolocation, online payments</li>
           <li>Development of backends, APIs, and data synchronization</li>
         </ul>
@@ -306,19 +284,17 @@ function LegalEn() {
         <h3>Complementary Services</h3>
         <ul>
           <li>2D digital illustrations for multimedia projects</li>
-          <li>2D sprites and animations of various levels of complexity</li>
+          <li>Sprites and 2D animations of varying levels of complexity</li>
           <li>3D modeling and animation of characters, scenarios, and objects</li>
-          <li>Interface design (UI/UX) adapted to the visual identity of the project</li>
-          <li>Optimization and update of existing applications</li>
+          <li>Interface design (UI/UX) adapted to the project's visual identity</li>
+          <li>Optimization and updating of existing applications</li>
           <li>Integrations with external platforms (payment gateways, CRM, social networks)</li>
-          <li>Connectivity with corporate systems through APIs and webhooks</li>
+          <li>Connectivity with enterprise systems through APIs and webhooks</li>
         </ul>
 
         <h2>INVESTMENT STRUCTURE</h2>
-
         <h3>Currency and Denomination</h3>
-        <p>All prices are expressed in Mexican Pesos (MXN) plus the 16% Value Added Tax (IVA) in accordance with current tax legislation.</p>
-
+        <p>All prices are expressed in Mexican Pesos (MXN) plus 16% Value Added Tax (IVA) in accordance with current tax legislation.</p>
         <h3>Accepted Payment Methods</h3>
         <ul>
           <li>Credit and debit cards through our online platform.</li>
@@ -326,107 +302,94 @@ function LegalEn() {
         </ul>
 
         <h2>OBLIGATIONS AND RESPONSIBILITIES OF THE CLIENT</h2>
-
         <h3>1. Information and Materials</h3>
         <p>In cases where the contracted service requires it, the client agrees to:</p>
         <ul>
           <li>Provide clear and truthful information about the project requirements.</li>
-          <li>Deliver the necessary content (e.g., texts, images, logos, audios, videos) guaranteeing that they hold the corresponding usage rights.</li>
+          <li>Deliver the necessary content (for example: texts, images, logos, audios, videos) guaranteeing that it holds the corresponding usage rights.</li>
           <li>Provide access credentials to systems, servers, or platforms, when indispensable for the correct provision of the service.</li>
           <li>Provide feedback and approvals within the established deadlines.</li>
         </ul>
-
         <h3>2. Active Collaboration</h3>
         <ul>
-          <li>Designate a responsible person with decision-making power to maintain constant communication.</li>
+          <li>Designate a responsible person with decision-making authority to maintain constant communication.</li>
           <li>Review and approve deliverables in accordance with the agreed schedule.</li>
           <li>Acknowledge that delays in approvals or in the delivery of materials may extend delivery deadlines without liability for CLICKVORA.</li>
         </ul>
-
         <h3>3. Intellectual Property Rights</h3>
         <ul>
-          <li>Guarantee that they possess the legal rights to all materials provided.</li>
-          <li>Refrain from requesting developments that infringe upon the intellectual property rights of third parties.</li>
-          <li>Hold CLICKVORA harmless from any claim arising from the content provided by the client.</li>
+          <li>Guarantee that it holds the legal rights over all materials provided.</li>
+          <li>Refrain from requesting developments that infringe the intellectual property rights of third parties.</li>
+          <li>Hold CLICKVORA harmless against any claim derived from the content provided by the client.</li>
         </ul>
 
         <h2>OBLIGATIONS AND COMMITMENTS OF CLICKVORA</h2>
-
         <h3>Professional Development</h3>
         <ul>
           <li>Execute projects with professional quality standards</li>
           <li>Use appropriate technologies according to agreed technical specifications</li>
-          <li>Maintain regular communication regarding project progress</li>
+          <li>Maintain regular communication about project progress</li>
           <li>Deliver functional products in accordance with what was contracted</li>
         </ul>
-
         <h3>Confidentiality</h3>
         <ul>
           <li>Protect sensitive client information under confidentiality agreements</li>
-          <li>Do not disclose project details without express authorization</li>
-          <li>Implement security measures for information safeguarding</li>
+          <li>Not disclose project details without express authorization</li>
+          <li>Implement security measures for the safekeeping of information</li>
         </ul>
-
         <h3>Delivery Deadlines</h3>
         <ul>
           <li>Comply with established schedules except for causes of force majeure or delays attributable to the client</li>
-          <li>Timely notify any situation that may affect schedules</li>
+          <li>Notify in a timely manner of any situation that may affect schedules</li>
           <li>Deadlines begin once all necessary materials and information have been received</li>
         </ul>
 
-        <h2>INTELLECTUAL PROPERTY AND COPYRIGHT</h2>
-
+        <h2>INTELLECTUAL PROPERTY AND COPYRIGHTS</h2>
         <h3>Ownership of Rights</h3>
-        <p>Upon completion of the total payment for the project, the client acquires the commercial usage rights over the final delivered product (executable code, compiled application, final visual assets).</p>
+        <p>Upon completion of the total payment of the project, the client acquires the rights of commercial use over the final product delivered (executable code, compiled application, final visual assets).</p>
         <p>CLICKVORA retains:</p>
         <ul>
-          <li>Rights over source code and proprietary methodologies (unless specifically agreed otherwise)</li>
+          <li>Rights over source code and proprietary methodologies (unless a specific agreement to the contrary exists)</li>
           <li>Freedom to reuse techniques, tools, and general knowledge in future projects</li>
-          <li>Right to include the project in the commercial portfolio (prior notification to the client)</li>
+          <li>Right to include the project in its commercial portfolio (with prior notification to the client)</li>
         </ul>
-
         <h3>Third-Party Licenses</h3>
         <p>Some projects may use libraries, frameworks, or assets with specific licenses. The client must respect the terms of such licenses, which will be informed during development.</p>
 
-        <h2>LIMITATIONS AND DISCLAIMERS OF LIABILITY</h2>
-
+        <h2>LIMITATIONS AND EXEMPTIONS OF LIABILITY</h2>
         <h3>Scope of Services</h3>
         <p>CLICKVORA is limited to developing digital products according to agreed specifications. We do not guarantee:</p>
         <ul>
           <li>Specific commercial results (downloads, sales, users, profits)</li>
           <li>Approval in application stores (Apple App Store, Google Play Store)</li>
           <li>Perpetual compatibility with future updates of operating systems or platforms</li>
-          <li>Operation on devices not specified in the technical requirements</li>
+          <li>Operation on devices not specified in technical requirements</li>
         </ul>
-
         <h3>Third-Party Content</h3>
         <p>We are not responsible for:</p>
         <ul>
-          <li>Downtime or malfunction of integrated external services (APIs, third-party servers)</li>
+          <li>Outages or malfunctioning of integrated external services (APIs, third-party servers)</li>
           <li>Changes in policies or terms of external platforms</li>
-          <li>Content generated by final users of the application</li>
-          <li>Financial transactions between the client and their final users</li>
+          <li>Content generated by end users of the application</li>
+          <li>Economic transactions between the client and its end users</li>
         </ul>
-
         <h3>Limitation of Damages</h3>
-        <p>Our maximum liability for any claim is limited to the total amount paid by the client for the specific project in question. CLICKVORA shall not be liable for indirect damages, loss of profits, loss of data, or consequences derived from the use of the delivered product.</p>
-
+        <p>Our maximum liability before any claim is limited to the total amount paid by the client for the specific project in question. CLICKVORA shall not be responsible for indirect damages, loss of profits, data loss, or consequences derived from the use of the delivered product.</p>
         <h3>Security and Cyber Attacks</h3>
-        <p>Although we implement standard security practices, no system is completely invulnerable. We do not guarantee absolute immunity against computer attacks, hacks, or security breaches. The client must implement their own protection and monitoring measures.</p>
+        <p>Although we implement standard security practices, no system is completely invulnerable. We do not guarantee absolute immunity against computer attacks, hacks, or security breaches. The client must implement its own protection and monitoring measures.</p>
 
         <h2>CONFIDENTIALITY AND NON-DISCLOSURE</h2>
-        <p>CLICKVORA undertakes to treat with confidentiality the information that clients provide during the use of the services, including technical, commercial data, or any shared sensitive material.</p>
-        <p>Likewise, the client acknowledges that they must maintain confidentiality regarding any non-public information of CLICKVORA to which they have access.</p>
-        <p>The obligation of confidentiality remains even after the service has ended, except in the following cases:</p>
+        <p>CLICKVORA undertakes to treat with confidentiality the information that clients provide during the use of the services, including technical, commercial data, or any sensitive material shared.</p>
+        <p>Likewise, the client acknowledges that it must maintain confidentiality regarding any non-public information of CLICKVORA to which it has access.</p>
+        <p>The confidentiality obligation remains even after the service has ended, except in the following cases:</p>
         <ul>
           <li>When the information is already in the public domain without any breach of these obligations.</li>
           <li>When there is a legal obligation or requirement from a competent authority to disclose it.</li>
-          <li>When the disclosure has been expressly authorized by the owner of the information.</li>
+          <li>When the disclosure has been expressly authorized by the party holding the information.</li>
         </ul>
 
         <h2>ACCEPTABLE USE OF THE WEBSITE</h2>
-
-        <h3>Prohibited Conducts</h3>
+        <h3>Prohibited Conduct</h3>
         <p>By using http://clickvora.com.mx/, you agree NOT to:</p>
         <ul>
           <li>Attempt to access restricted areas or administrative systems</li>
@@ -434,53 +397,49 @@ function LegalEn() {
           <li>Transmit viruses, malware, or malicious code</li>
           <li>Use bots, scrapers, or automated tools without authorization</li>
           <li>Reproduce, duplicate, or copy content without express permission</li>
-          <li>Defame, harass, or perform illegal activities through the platform</li>
-          <li>Impersonate CLICKVORA, its staff, or representatives</li>
+          <li>Defame, harass, or carry out illegal activities through the platform</li>
+          <li>Impersonate CLICKVORA, its personnel, or representatives</li>
         </ul>
-
         <h3>Consequences for Violations</h3>
-        <p>Failure to comply with these rules may result in: access blocking, service cancellation, legal actions, and claims for damages.</p>
+        <p>Failure to comply with these rules may result in: blocking of access, cancellation of services, legal actions, and claims for damages and losses.</p>
 
         <h2>LINKS TO EXTERNAL SITES</h2>
-        <p>CLICKVORA.com may contain links to third-party websites (providers, partners, social networks). These links are provided solely for convenience.</p>
-        <p>CLICKVORA does not control nor assume responsibility for:</p>
+        <p>CLICKVORA.com may contain links to third-party websites (suppliers, partners, social networks). These links are provided solely for convenience.</p>
+        <p>CLICKVORA does not control or assume responsibility for:</p>
         <ul>
           <li>Content of external sites</li>
           <li>Privacy practices of third parties</li>
           <li>Accuracy or security of external resources</li>
           <li>Transactions carried out on third-party platforms</li>
         </ul>
-        <p>We recommend reading the terms and policies of any external site you visit.</p>
+        <p>We recommend that you read the terms and policies of any external site you visit.</p>
 
         <h2>FORCE MAJEURE AND CAUSES BEYOND CONTROL</h2>
-        <p>Neither party shall be liable for failures caused by extraordinary circumstances beyond their reasonable control, including:</p>
+        <p>Neither party shall be responsible for non-compliance caused by extraordinary circumstances beyond its reasonable control, including:</p>
         <ul>
           <li>Natural disasters (earthquakes, floods, hurricanes)</li>
           <li>Health contingencies or pandemics</li>
           <li>Acts of authority or abrupt regulatory changes</li>
-          <li>Massive failures of internet infrastructure or telecommunications</li>
-          <li>Armed conflicts, civil unrest, or terrorist acts</li>
-          <li>Massive cyber attacks affecting critical infrastructure</li>
+          <li>Massive failures of internet or telecommunications infrastructure</li>
+          <li>Armed conflicts, civil disturbances, or terrorist acts</li>
+          <li>Massive cyberattacks affecting critical infrastructure</li>
         </ul>
         <p>In such cases, deadlines will be reasonably extended and the feasibility of continuing the project will be evaluated.</p>
 
-        <h2>RESOLUTION OF DISPUTES</h2>
-
+        <h2>DISPUTE RESOLUTION</h2>
         <h3>Direct Negotiation</h3>
-        <p>In the event of any disagreement, the parties initially agree to resolve it through direct communication and negotiation in good faith.</p>
-
+        <p>In the event of any disagreement, the parties initially agree to resolve it through direct communication and good-faith negotiation.</p>
         <h3>Mediation</h3>
-        <p>If negotiation fails, the parties will attempt to resolve through mediation through the Federal Consumer Attorney's Office (PROFECO) when the client qualifies as a final consumer.</p>
-
+        <p>If negotiation fails, the parties will attempt to resolve it through mediation via the Federal Consumer Protection Agency (PROFECO) when the client qualifies as an end consumer.</p>
         <h3>Applicable Jurisdiction</h3>
-        <p>For any dispute that cannot be resolved amicably, both parties expressly submit to the applicable laws and jurisdiction of the competent courts of Mexico City, waiving any other jurisdiction that might correspond to them.</p>
+        <p>For any dispute that cannot be resolved amicably, both parties expressly submit to the applicable laws and jurisdiction of the competent courts of Mexico City, waiving any other jurisdiction that may correspond to them.</p>
 
         <h2>MODIFICATIONS TO THESE TERMS</h2>
         <p>CLICKVORA reserves the right to update these Terms and Conditions at any time to reflect changes in:</p>
         <ul>
-          <li>Services offered or working methodologies</li>
+          <li>Services offered or work methodologies</li>
           <li>Legal or regulatory requirements</li>
-          <li>Business practices or price structures</li>
+          <li>Commercial practices or price structures</li>
         </ul>
         <p>Continued use of our services after modifications constitutes acceptance of the new terms.</p>
         <p>Current version: 13/07/2025</p>
@@ -489,21 +448,20 @@ function LegalEn() {
         <h2>CONTACT INFORMATION</h2>
         <p>For inquiries, clarifications, or notifications related to these Terms and Conditions:</p>
         <p>Email: cotizacion@clickvora.com.mx</p>
-        <p>Domicile: Avenida Homero N° 404, Piso 5, Colonia Polanco V Sección, Alcaldía Miguel Hidalgo, C.P. 11560, Ciudad de México.</p>
-        <p>Service hours: Monday to Friday, 9:00 – 18:00 hrs (Central Mexico Time)</p>
+        <p>Address: RODOLFO GAONA 3, INTERIOR 502 PISO 5, COLONIA PERIODISTA, ALCALDÍA MIGUEL HIDALGO, CP.11220, CIUDAD DE MÉXICO</p>
+        <p>Business hours: Monday to Friday, 9:00 – 18:00 hrs (Mexico Central Time)</p>
 
-        <h2>FINAL DECLARATION OF ACCEPTANCE</h2>
+        <h2>FINAL ACCEPTANCE STATEMENT</h2>
         <p>By using the website http://clickvora.com.mx/, contacting CLICKVORA, requesting quotes, or contracting services, you declare:</p>
         <ul>
-          <li>✓ Being over 18 years of age or having the legal capacity to contract</li>
-          <li>✓ Having read and understood these Terms and Conditions in their entirety</li>
-          <li>✓ Agreeing to be legally bound by all provisions established herein</li>
-          <li>✓ Having the authority to bind the company or organization you represent (when applicable)</li>
+          <li>✓ To be over 18 years of age or to have the legal capacity to contract</li>
+          <li>✓ To have read and understood these Terms and Conditions in their entirety</li>
+          <li>✓ To accept being legally bound by all the provisions established herein</li>
+          <li>✓ To have the authority to commit the company or organization you represent (when applicable)</li>
         </ul>
-
-        <p>ANTONE ARRIVALS, S.A. DE CV</p>
-        <p>CLICKVORA – Transforming Ideas into Digital Experiences</p>
-        <p>These Terms and Conditions constitute a legally binding agreement between you and ANTONE ARRIVALS, S.A. DE CV. Please keep for future reference.</p>
+        <p>CONG TECNOLOGICS S.A. DE C.V.</p>
+        <p>CLICKVORA – We Transform Ideas into Digital Experiences</p>
+        <p>These Terms and Conditions constitute a legally binding agreement between you and CONG TECNOLOGICS S.A. DE C.V. Keep for your future reference.</p>
       </section>
     </div>
   );

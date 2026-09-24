@@ -354,10 +354,10 @@
       "schedule": "Schedule",
       "scheduleHours": "Mon - Fri: 9:00 - 18:00",
       "addressLines": {
-        "line1": "AVENIDA HOMERO, N°404 FLOOR 5,",
-        "line2": "COLONIA POLANCO V SECCION,",
-        "line3": "MIGUEL HIDALGO DISTRICT, CP. 11560,",
-        "line4": "MEXICO CITY."
+        "line1": "RODOLFO GAONA 3, INTERIOR 502 PISO 5,",
+        "line2": "COLONIA PERIODISTA, ",
+        "line3": "ALCALDÍA MIGUEL HIDALGO,",
+        "line4": "CP.11220, CIUDAD DE MÉXICO."
       }
     }
   },
@@ -453,8 +453,8 @@
       "phone": "Phone",
       "address": "Address",
       "addressLines": {
-        "line1": "HOMERO STREET, 404 FLOOR 5, COLONIA POLANCO V SECTION, MIGUEL HIDALGO DISTRICT, ",
-        "line2": "CP. 11560, MEXICO CITY +52 1 55 5244 5689"
+        "line1": "RODOLFO GAONA 3, INTERIOR 502 PISO 5, COLONIA PERIODISTA, ",
+        "line2": "ALCALDÍA MIGUEL HIDALGO, CP.11220, CIUDAD DE MÉXICO + 52 1 55 5557 8793"
       }
     },
     "images": {

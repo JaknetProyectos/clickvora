@@ -244,10 +244,10 @@ export default function ContactSection() {
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wider mb-1">{t("info.phone")}</p>
                     <a
-                      href="tel:+525552445689"
+                      href="tel:+5215555578793"
                       className="text-gray-300 hover:text-[#A8D5E2] transition-colors duration-300"
                     >
-                      +52 55 5244 5689
+                      + 52 1 55 5557 8793
                     </a>
                   </div>
                 </div>

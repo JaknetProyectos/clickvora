@@ -354,10 +354,10 @@
       "schedule": "Horario",
       "scheduleHours": "Lun - Vie: 9:00 - 18:00",
       "addressLines": {
-        "line1": "AVENIDA HOMERO, N°404 PISO 5,",
-        "line2": "COLONIA POLANCO V SECCIÓN,",
-        "line3": "ALCALDÍA MIGUEL HIDALGO, CP. 11560,",
-        "line4": "ENTIDAD FEDERATIVA CIUDAD DE MÉXICO."
+        "line1": "RODOLFO GAONA 3, INTERIOR 502 PISO 5,",
+        "line2": "COLONIA PERIODISTA, ",
+        "line3": "ALCALDÍA MIGUEL HIDALGO,",
+        "line4": "CP.11220, CIUDAD DE MÉXICO."
       }
     }
   },
@@ -453,8 +453,8 @@
       "phone": "Teléfono",
       "address": "Dirección",
       "addressLines": {
-        "line1": "AVENIDA HOMERO, 404 PISO 5, COLONIA POLANCO V SECCIÓN, ALCALDIA MIGUEL HIDALGO, ",
-        "line2": "CP. 11560, CIUDAD DE MÉXICO +52 1 55 5244 5689"
+        "line1": "RODOLFO GAONA 3, INTERIOR 502 PISO 5, COLONIA PERIODISTA, ",
+        "line2": "ALCALDÍA MIGUEL HIDALGO, CP.11220, CIUDAD DE MÉXICO + 52 1 55 5557 8793"
       }
     },
     "images": {
@@ -588,7 +588,7 @@
       },
       "checkout": {
         "clientSubject": "✓ Tu recibo de compra #{orderId} - Clickvora",
-        "businessSubject": "💰 [Venta] Orden #{orderId} - ${amount} MXN",
+        "businessSubject": "[Venta] Orden #{orderId} - ${amount} MXN",
         "clientTitle": "Confirmación de Compra",
         "clientSubtitle": "Gracias por tu compra. Tu orden #{orderId} ha sido procesada con éxito.",
         "businessTitle": "¡Nueva Venta Procesada!",

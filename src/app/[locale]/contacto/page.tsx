@@ -219,11 +219,10 @@ export default function ContactPage() {
                 <motion.div
                   initial={{ opacity: 0, y: -10 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className={`p-4 rounded-xl text-sm border ${
-                    status.type === "success"
+                  className={`p-4 rounded-xl text-sm border ${status.type === "success"
                       ? "bg-green-500/10 text-green-400 border-green-500/20"
                       : "bg-red-500/10 text-red-400 border-red-500/20"
-                  }`}
+                    }`}
                 >
                   {status.message}
                 </motion.div>
@@ -343,8 +342,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wider">{t("info.phone")}</p>
-                    <a href="tel:+12345678900" className="text-gray-300 hover:text-[#A8D5E2] transition-colors duration-300 text-sm">
-                      +52 1 55 5244 5689
+                    <a href="tel:+5215555578793" className="text-gray-300 hover:text-[#A8D5E2] transition-colors duration-300 text-sm">
+                      + 52 1 55 5557 8793
                     </a>
                   </div>
                 </div>
@@ -380,7 +379,7 @@ export default function ContactPage() {
         <div className="bg-[#1A232E] rounded-3xl overflow-hidden border border-[#2A3A4A]/50 shadow-xl">
           <div className="w-full h-64 bg-[#0F151C]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.1975795817248!2d-99.1887582305509!3d19.43553434410102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8aa36ee3f39%3A0x9cc974bcc81656e9!2sAv.%20Homero%20404-PISO%205%2C%20Polanco%2C%20Polanco%20V%20Secc%2C%20Miguel%20Hidalgo%2C%2011560%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1784585089566!5m2!1ses-419!2smx"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.072089717983!2d-99.22147712541145!3d19.452458440047614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20238a14ac86d%3A0x65c7ef88d495bfca!2sAv.%20Rodolfo%20Gaona%203%2C%20Periodista%2C%20Miguel%20Hidalgo%2C%2011220%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1790209669672!5m2!1ses-419!2smx"
               className="w-full h-full border-0"
               allowFullScreen={false}
               loading="lazy"

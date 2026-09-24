@@ -1,34 +1,11 @@
-Contact Us
-Inicio > Contact Us
+RODOLFO GAONA 3, INTERIOR 502 PISO 5, COLONIA PERIODISTA, 
+ALCALDÍA MIGUEL HIDALGO, CP.11220, CIUDAD DE MÉXICO
 
-Image carousel
+RODOLFO GAONA 3, INTERIOR 502 PISO 5,
+COLONIA PERIODISTA, 
+ALCALDÍA MIGUEL HIDALGO,
+CP.11220, CIUDAD DE MÉXICO
 
--------------
++ 52 1 55 5557 8793
 
-(lets talk) // 2 cols
-
-// col 1 form
-For general enquiries, please fill out the form to get in touch.
-
-Nombre _______   Email __________
-telefono _____  Asunto ________ v (dropdown : Cotización, dudas sobre el servicio, pagos, otro)
-textarea "cuentanos sobre tu proyecto"
-
-[enviar mensaje]
-
-// col 2
-
-Image
-
-Hate contact forms? Contact us directly
-info@saliver.com
-+(123) 456 789 00
-
-Saliver Creative
-123 Coly new road, Horwich
-Bolton, BL7 9QN
-
-
----------------------------
-
-Google maps iframe
+RODOLFO GAONA 3, INTERIOR 502 PISO 5, COLONIA PERIODISTA,  ALCALDÍA MIGUEL HIDALGO, CP.11220, CIUDAD DE MÉXICO
